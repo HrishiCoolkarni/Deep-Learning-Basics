@@ -7,8 +7,7 @@ with open('Deep-Learning-with-OpenCV-DNN-Module\input\classification_classes_ILS
     for classes in img_net_class:
         class_name.append(classes.split(',')[0])
     print(class_name)
-    # class_name = [name.split(',')[0] for name in img_net_class]
-
+   
 
 model= cv2.dnn.readNet(model= 'Deep-Learning-with-OpenCV-DNN-Module\input\DenseNet_121.caffemodel',
 config='Deep-Learning-with-OpenCV-DNN-Module\input\DenseNet_121.prototxt',framework='Caffe')
